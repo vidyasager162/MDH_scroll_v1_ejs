@@ -1,0 +1,228 @@
+/* CLASSES */
+body {
+	background-color: #F9F7F7;
+	color: black;
+	margin: 0;
+	padding: 0;
+}
+.dark-mode {
+	background-color: #121212;
+	color: white;
+}
+header {
+	background-color: #112D4E;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 30px;
+	display: block;
+	color: #F9F7F7;
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	top: 0;
+	position: fixed;
+	width: 100%;
+}
+header a {
+	background-color: #112D4E;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 25px;
+	display: inline;	
+	color: #F9F7F7;
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+}
+.sidenavbar {
+	height:100%;
+	width: 0%;
+	z-index: 1;
+	background-color: #112D4E;
+	position: fixed;
+	top: 0;
+	left: 0;
+	transition:0.5s;
+	overflow-x: hidden;
+	padding-top: 60px;
+}
+.sidenavbar a {
+	font-family: 'Bebas Neue', cursive;
+	font-size: 25px;
+	display: block;
+	color: #F9F7F7;
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	transition: 0.3s;
+}
+.sidenavbar a:hover {
+	background-color: #3F72AF;
+}
+.sidenavbar .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 25px;
+	margin-left: 50px;
+	padding: 10px;
+}
+.logo {
+	text-align: center;
+}
+.intro {
+	font-family: 'Teko', sans-serif;
+	text-align: center;
+	font-size: 30px;
+}
+.contd {
+	font-family: 'Teko', sans-serif;
+	text-align: center;
+	font-size: 35px;
+}
+.ele {
+	font-family: 'Barlow Condensed', sans-serif;
+	text-align: center;
+	font-size: 30px;
+}
+.idea {
+	font-family: 'Barlow Condensed', sans-serif;
+	text-align: center;
+	font-size: 30px;
+}
+h1 {
+	font-family: 'Bebas Neue', cursive; 
+	font-size: 60px;
+	text-align: center; 
+	color: #112D4E
+	
+}
+.dotted{
+	border-style: none;
+  	border-top-style: dotted;
+  	border-color: #DBE2EF;
+  	border-width: 12px;
+  	width: 10%;
+}
+
+.fhr {
+	margin: 0;
+}
+
+.login {
+	background-color: #DBE2EF;
+	color: black;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 30px;
+	text-align: center;
+	margin: 50px;
+	width: 25%;
+}
+
+.login > h2 {
+	font-family: 'Just Another Hand', cursive;
+	margin: 0;
+	padding: 5px;
+}
+
+address {
+	color: #3F72AF;
+}
+footer {
+	background-color: #3F72AF;
+	bottom: 50;
+	color: #F9F7F7;
+	font-family: 'Bebas Neue', cursive;
+	position: relative;
+	width: 100%;	
+}
+
+.img-wrapper{
+	position: relative;
+	padding: 20px;
+}
+
+.con-wrapper {
+	position: relative;
+	padding: 0 0 20px 20px;
+}
+
+.footer-wrapper > p {
+	margin: 0;
+	padding: 20px 0 20px 0;	
+	font-size: 25px;
+	position: relative;
+	left: 20px;
+}
+
+span {
+	font-family: 'Bebas Neue', cursive;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+center {
+	margin-top: 100px;
+	margin-bottom: 85px;
+}
+
+address {
+	margin-bottom: 21px;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenavbar {padding-top: 15px;}
+	.sidenavbar a{font-size: 18px;}
+}
+@media screen and (max-height: 800px) {
+	section {width: fit-content;}
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+	
+/* IDs */
+#main {
+	transition: margin-left .5s;
+	padding: 20px;
+}
+#about {
+	font-family: 'Barlow Condensed', sans-serif;
+	text-align: center;
+	font-size: 30px;
+}
+#ps {
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 30px;
+	text-align: center;
+}
+#contact {
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 30px;
+	text-align: center;
+}
+
+/*
+li a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #9ED2C6;
+}
+*/
+#dark {
+	position: fixed; 
+  	bottom: 30px; 
+  	right: 30px; 
+  	z-index: 99;  
+	width: 20px;
+	height: 20px;  
+	background-color: #3F72AF;
+	padding: 10px;
+	border-radius: 50%;
+}

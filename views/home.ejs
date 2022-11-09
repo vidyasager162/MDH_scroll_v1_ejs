@@ -1,0 +1,111 @@
+<%- include('partials/header'); -%>
+<br><br><br><br><br><br><br><br><br>
+<div id="main">
+    <div class="home-container">
+        <div class="logo">
+            <img src="/Images/sssihl-modified.png" width="140" height="140">
+        </div>
+        <div class="intro">
+            <h1 style="margin-bottom: 0;">SSSIHL MDH CAMPUS</h1>
+        </div>
+        <div class="contd">
+            <p style="margin-top: 0; margin-bottom: 0;">Student & Faculty Database</p>
+            <p style="margin-top: 0;font-size: 25px;"> by Vidyasager GR & Sairaj Patro</p>
+        </div>
+    </div>	
+    <br><br>
+    <hr class="dotted">
+    <br>
+    <br>
+    <div id="about">
+        <h1>ABOUT</h1>
+        <h2>This is our DBMS project</h2>
+        <p>We (Vidyasager GR & Sairaj Patro) the students of <abbr title="Sri Sathya Sai Institute of Higher Learning">SSSIHL</abbr> have chosen our DBMS Project to compile the database of all the faculty and students of our <abbr title="Muddenahalli">MDH</abbr> Campus.</p>
+        <q>Apart from being a Database of Faculty and Students, it will also lead to making a software/web-interface that generates class Timetables based on the details in the Database.</q>
+    </div>
+    <div class="idea">
+        <h4>The Base Idea: <i>A Repository of the Student, Faculty, Department and Subject details.</i></h4>
+        <h4>Final Result: <i>A web-interface that allows users to access details of faculty and students and also to generate Timetables.</i></h4>
+    </div>
+    <br>
+    <hr class="dotted">
+    <br id="gops">
+    <div id="ps">
+        <h1>PROBLEM STATEMENT</h1>
+        <q>When a Teacher joins the institute, he is provided with his department details.
+        Once he is in campus, he is requested to submit certain details and documents. These details are entered into the system to keep a record of all the teachers of the campus.</q>
+        <br>
+        <q>When a student joins the institute, he is provided with his roll number and other details based on his course details. Once he is in campus, he is requested to submit certain documents. These details are entered into the system to keep a record of all the students of the campus.</q>
+        <br><br>
+        <i>(This rendition of the Database will encompass data of faculty and students of the MDH campus specifically)
+        But in essence, this system can be implemented across all the campuses.
+        Eg: We can also create a BRN Campus Database.</i>
+    </div>
+    <br>
+    <div class="ele">
+        <b>The Teacher table will contain the following attributes:</b>
+        <ul>
+            <li>Teacher Name</li>
+            <li>DOB (Date of Birth)</li>
+            <li>Address</li>
+            <li>Qualifications</li>
+            <li>Experience</li>
+            <li>Teaching Areas</li>
+            <li>Phone No.</li>
+            <li>Email ID</li>
+            <li>Blood Group</li>
+            <li>Department</li>
+        </ul>
+        <br>
+        <b>The Student table will contain the following attributes:</b>
+        <ul>
+            <li>Student Name</li>
+            <li>DOB (Date of Birth)</li>
+            <li>Regd No.</li>
+            <li>Address</li>
+            <li>Phone No.</li>
+            <li>Email ID</li>
+            <li>Blood Group</li>
+            <li>Religion</li>
+            <li>Caste (If applicable)</li>
+        </ul>
+        <br>
+        <b>The Department table will contain the following attributes:</b>
+        <ul>
+            <li>Department Name</li>
+            <li>Department ID</li>
+        </ul>
+        <br>
+        <b>The Slot table will be specialized into multiple tables:</b>
+        <ul>
+            <li>Common Subjects</li>
+            <li>Core Subjects</li>
+            <li>Electives</li>
+            <li>Lab Subjects</li>
+            <li>Fixed Slots(Library, Lunch, Moral Class)</li>
+        </ul>
+        <br>
+        <b>The Course table will be specialized into multiple tables:</b>
+        <ul>
+            <li>UG</li>
+            <li>PG</li>
+        </ul>
+    </div>
+    <br><br>
+    <hr class="dotted">
+    <br id="gocon">
+    <div id="contact">
+        <h1>CONTACT US</h1>
+        <h2>Vidyasager GR & Sairaj Patro</h2>
+        <address>
+            vidyasager162@gmail.com<br>
+            patrosairaj33@gmail.com<br>
+            Sri Sathya Sai Institute of Higher Learning Hostel,<br>
+            Muddenahalli Campus,<br>
+            (South Gate)<br>
+            Muddenahalli,<br>
+            Chikkaballapur-562101<br>
+            Karnataka
+        </address>
+    </div>
+<%- include('partials/footer'); -%>
