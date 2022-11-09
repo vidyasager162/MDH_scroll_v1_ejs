@@ -1,129 +1,23 @@
-/* CLASSES */
+/* TAGS */
+
+address { /* Address in Contact Us section */
+	color: #3F72AF;
+	margin-bottom: 21px;
+}
+
 body {
 	background-color: #F9F7F7;
 	color: black;
 	margin: 0;
 	padding: 0;
 }
-.dark-mode {
-	background-color: #121212;
-	color: white;
-}
-header {
-	background-color: #112D4E;
-	font-family: 'Bebas Neue', cursive;
-	font-size: 30px;
-	display: block;
-	color: #F9F7F7;
-	padding: 8px 8px 8px 32px;
-	text-decoration: none;
-	top: 0;
-	position: fixed;
-	width: 100%;
-}
-header a {
-	background-color: #112D4E;
-	font-family: 'Bebas Neue', cursive;
-	font-size: 25px;
-	display: inline;	
-	color: #F9F7F7;
-	padding: 8px 8px 8px 32px;
-	text-decoration: none;
-}
-.sidenavbar {
-	height:100%;
-	width: 0%;
-	z-index: 1;
-	background-color: #112D4E;
-	position: fixed;
-	top: 0;
-	left: 0;
-	transition:0.5s;
-	overflow-x: hidden;
-	padding-top: 60px;
-}
-.sidenavbar a {
-	font-family: 'Bebas Neue', cursive;
-	font-size: 25px;
-	display: block;
-	color: #F9F7F7;
-	padding: 8px 8px 8px 32px;
-	text-decoration: none;
-	transition: 0.3s;
-}
-.sidenavbar a:hover {
-	background-color: #3F72AF;
-}
-.sidenavbar .closebtn {
-	position: absolute;
-	top: 0;
-	right: 25px;
-	font-size: 25px;
-	margin-left: 50px;
-	padding: 10px;
-}
-.logo {
-	text-align: center;
-}
-.intro {
-	font-family: 'Teko', sans-serif;
-	text-align: center;
-	font-size: 30px;
-}
-.contd {
-	font-family: 'Teko', sans-serif;
-	text-align: center;
-	font-size: 35px;
-}
-.ele {
-	font-family: 'Barlow Condensed', sans-serif;
-	text-align: center;
-	font-size: 30px;
-}
-.idea {
-	font-family: 'Barlow Condensed', sans-serif;
-	text-align: center;
-	font-size: 30px;
-}
-h1 {
-	font-family: 'Bebas Neue', cursive; 
-	font-size: 60px;
-	text-align: center; 
-	color: #112D4E
-	
-}
-.dotted{
-	border-style: none;
-  	border-top-style: dotted;
-  	border-color: #DBE2EF;
-  	border-width: 12px;
-  	width: 10%;
+
+center { /* Center tag used on login form div */
+	margin-top: 100px;
+	margin-bottom: 85px;
 }
 
-.fhr {
-	margin: 0;
-}
-
-.login {
-	background-color: #DBE2EF;
-	color: black;
-	font-family: 'Bebas Neue', cursive;
-	font-size: 30px;
-	text-align: center;
-	margin: 50px;
-	width: 25%;
-}
-
-.login > h2 {
-	font-family: 'Just Another Hand', cursive;
-	margin: 0;
-	padding: 5px;
-}
-
-address {
-	color: #3F72AF;
-}
-footer {
+footer { /* Footer in footer.ejs */
 	background-color: #3F72AF;
 	bottom: 50;
 	color: #F9F7F7;
@@ -132,42 +26,48 @@ footer {
 	width: 100%;	
 }
 
-.img-wrapper{
-	position: relative;
-	padding: 20px;
+h1 {
+	color: #112D4E;
+	font-family: 'Bebas Neue', cursive; 
+	font-size: 60px;
+	text-align: center; 
 }
 
-.con-wrapper {
-	position: relative;
-	padding: 0 0 20px 20px;
+header { /* Header in header.ejs */ 
+	background-color: #112D4E;
+	color: #F9F7F7;
+	display: block;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 30px;
+	padding: 8px 8px 8px 32px;
+	position: fixed;
+	text-decoration: none;
+	top: 0;	
+	width: 100%;
 }
 
-.footer-wrapper > p {
-	margin: 0;
-	padding: 20px 0 20px 0;	
+header a {
+	background-color: #112D4E;
+	color: #F9F7F7;
+	display: inline;
+	font-family: 'Bebas Neue', cursive;
 	font-size: 25px;
-	position: relative;
-	left: 20px;
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
 }
 
-span {
+span { /* Span used in header for nav button and also in footer for img */
 	font-family: 'Bebas Neue', cursive;
 }
-ul {
+
+ul { /* Used in listing table contents */
 	list-style-type: none;
 	margin: 0;
-	padding: 0;
 	overflow: hidden;
+	padding: 0;	
 }
 
-center {
-	margin-top: 100px;
-	margin-bottom: 85px;
-}
-
-address {
-	margin-bottom: 21px;
-}
+/* RESPONSIVENESS */
 
 @media screen and (max-height: 450px) {
 	.sidenavbar {padding-top: 15px;}
@@ -177,37 +77,159 @@ address {
 	section {width: fit-content;}
 }
 
-::-webkit-scrollbar {
-	display: none;
+/* CLASSES */
+
+.con-wrapper { /* Footer content container/wrapper */ 
+	padding: 0 0 20px 20px;
+	position: relative;
 }
-	
-/* IDs */
-#main {
-	transition: margin-left .5s;
-	padding: 20px;
-}
-#about {
-	font-family: 'Barlow Condensed', sans-serif;
-	text-align: center;
-	font-size: 30px;
-}
-#ps {
-	font-family: 'Barlow Condensed', sans-serif;
-	font-size: 30px;
+
+.contd { /* Intro continuation */
+	font-family: 'Teko', sans-serif;
+	font-size: 35px;
 	text-align: center;
 }
-#contact {
+
+.dark-mode { /* Class for toggling dark mode */
+	background-color: #121212;
+	color: #F9F7F7;
+}
+
+.dotted{ /* Class for all the hr formatted as dots */
+	border-color: #DBE2EF;
+	border-style: none;
+  	border-top-style: dotted;
+  	border-width: 12px;
+  	width: 10%;
+}
+
+.ele { /* Relational table content div class */
 	font-family: 'Barlow Condensed', sans-serif;
 	font-size: 30px;
 	text-align: center;
 }
 
+.fhr { /* Class for hr in the footer */
+	margin: 0;
+}
+
+.footer-wrapper > p { /* Overall container inside the Footer */
+	font-size: 25px;
+	left: 20px;
+	margin: 0;
+	padding: 20px 0 20px 0;	
+	position: relative;
+}
+
+.idea { /* Class for the base idea div */
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 30px;
+	text-align: center;
+}
+
+.img-wrapper{ /* Container for the image in footer */
+	padding: 20px;
+	position: relative;
+}
+
+.intro { /* Website intro div */
+	font-family: 'Teko', sans-serif;
+	font-size: 30px;
+	text-align: center;
+}
+
+.login { /* Class for the login form div in login.ejs */
+	background-color: #DBE2EF;
+	color: black;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 30px;
+	margin: 50px;
+	text-align: center;
+	width: 25%;
+}
+
+.login > h2 {
+	font-family: 'Just Another Hand', cursive;
+	margin: 0;
+	padding: 5px;
+}
+
+.logo { /* Container for the img in the intro */
+	text-align: center;
+}
+
+.sidenavbar {
+	background-color: #112D4E;
+	height:100%;
+	left: 0;
+	overflow-x: hidden;
+	padding-top: 60px;
+	position: fixed;
+	top: 0;
+	transition:0.5s;
+	width: 0%;
+	z-index: 1;
+}
+
+.sidenavbar a {
+	color: #F9F7F7;
+	display: block;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 25px;
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.sidenavbar a:hover {
+	background-color: #3F72AF;
+}
+
+.sidenavbar .closebtn {
+	font-size: 25px;
+	margin-left: 50px;
+	padding: 10px;
+	position: absolute;
+	right: 25px;
+	top: 0;
+}
+
+::-webkit-scrollbar { /*Trick to remove the scrollbar of the client browser */
+	display: none;
+}
+
+/* IDs */
+
+#about { /* About Us div */
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 30px;
+	text-align: center;
+}
+
+#contact { /* Contact Us div */
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 30px;
+	text-align: center;
+}
+
+#dark { /* Dark mode toggle button styling */
+	background-color: #3F72AF;
+	border-radius: 50%;
+	bottom: 30px;
+	height: 20px;  
+	padding: 10px;
+	position: fixed; 
+  	right: 30px;   
+	width: 20px;
+	z-index: 99;
+}
+
 /*
 li a {
-	display: block;
 	color: black;
-	text-align: center;
+	display: block;
 	padding: 16px;
+	text-align: center;
 	text-decoration: none;
 }
 
@@ -215,14 +237,14 @@ li a:hover {
 	background-color: #9ED2C6;
 }
 */
-#dark {
-	position: fixed; 
-  	bottom: 30px; 
-  	right: 30px; 
-  	z-index: 99;  
-	width: 20px;
-	height: 20px;  
-	background-color: #3F72AF;
-	padding: 10px;
-	border-radius: 50%;
+
+#main { /*This div contains the entire content of the website except the Footer and Header */
+	padding: 20px;
+	transition: margin-left .5s;
+}
+
+#ps { /* Problem Statement div */
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 30px;
+	text-align: center;
 }
